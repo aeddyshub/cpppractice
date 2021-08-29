@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+ template <typename a>
+    a myfun(a x,a y){
+        return x+y;
+    }
+    int main()
+{  
+    std::cout << myfun<double>(7.6,8.9) << std::endl;
+    std::cout << myfun<int>(6,7) << std::endl;
+    std::cout << myfun<char>(97,0) << std::endl;
+    return 0;
+}
