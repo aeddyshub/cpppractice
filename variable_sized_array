@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+   
+    int q,n,k,a,b,val; 
+     cin>>n>>q;
+  vector<vector<int>> v(n);  
+  
+   for(int i=0;i<n;i++){
+       cin>>k;
+       for(int j=0;j<k;j++){
+           cin>>val;
+           v[i].push_back(val);
+       }
+   }
+    for(int l=0;l<q;l++){
+        cin>>a>>b;
+        cout<<v[a][b]<<"\n";
+        
+    }
+    return 0;
+}
